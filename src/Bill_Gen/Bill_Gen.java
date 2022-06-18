@@ -2,6 +2,8 @@
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
+ * This is Demo for Calcuating the bill 
+ * We have use Swing pallete [Netbeans 8.1]
  */
 package Bill_Gen;
 
@@ -437,6 +439,8 @@ public class Bill_Gen extends javax.swing.JFrame {
 
     private void bprintActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bprintActionPerformed
         // TODO add your handling code here:
+        // to handle the printing the recipt 
+        // throw exception when printer is unable to print.
         try{
             bill.print();
         }catch(PrinterException e){
@@ -534,6 +538,7 @@ public class Bill_Gen extends javax.swing.JFrame {
     }
     private void bgenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bgenActionPerformed
         // TODO add your handling code here:
+        //  recipt pattern
         
        
         bill.setText(" ______________K.A MOTORS PVT. LTD._____________ \n");
